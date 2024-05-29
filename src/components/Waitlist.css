@@ -1,0 +1,28 @@
+/* Waitlist.css */
+.illustration {
+  width: 400px; /* or adjust to the size you prefer */
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  transform: translateY(-50%) rotate(-10deg); /* Adjust the rotation angle as needed */
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%) rotate(10deg); /* Ensure the initial position matches the final position with rotation */
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0) rotate(-10deg);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+

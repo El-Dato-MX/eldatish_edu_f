@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles for desktop screens */
+@media (min-width: 1024px) {
+  /* Add your custom styles for desktop here */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  /* Add your custom styles for tablets here */
+}
+
+@media (max-width: 768px) {
+  /* Add your custom styles for mobile devices here */
+}
+
