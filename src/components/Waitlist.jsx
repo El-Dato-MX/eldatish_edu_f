@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase'; // Adjust the path to your firebase configuration file
 import { Container, TextField, Button, Box, Typography } from '@mui/material';
-import { CSSTransition } from 'react-transition-group';
+//import { CSSTransition } from 'react-transition-group';
 import mlb from '../assets/mlb.png'; // Adjust the path as needed
 import mysqlLogo from '../assets/mysqlLogo.png';
 import pythonLogo from '../assets/pythonLogo.png';
-import './Waitlist.css'; // Ensure you create this CSS file
+//import './Waitlist.css'; // Ensure you create this CSS file
 
 const Waitlist = () => {
   const [email, setEmail] = useState('');
@@ -65,14 +65,14 @@ const Waitlist = () => {
           <img src={mysqlLogo} alt="MySQL Logo" style={{ width: 25, marginRight: 10 }} />
           <img src={pythonLogo} alt="Python Logo" style={{ width: 25, marginRight: 10 }} />
         </Box>
-        <CSSTransition
+        {/* <CSSTransition
           in={showImage}
           timeout={300}
           classNames="fade"
           unmountOnExit
         >
           <img src={mlb} alt="mlb_logo" className="illustration" />
-        </CSSTransition>
+        </CSSTransition>*/}
       </Box>
     </Container>
   );
